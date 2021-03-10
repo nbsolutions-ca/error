@@ -1,1 +1,1 @@
-@nbsolutions/error - v0.0.0 / [Exports](modules.md)
+@nbsolutions/error - v1.0.0 / [Exports](modules.md)

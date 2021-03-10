@@ -1,4 +1,4 @@
-[@nbsolutions/error - v0.0.0](../README.md) / [Exports](../modules.md) / [NBSError](../modules/nbserror.md) / NBSError
+[@nbsolutions/error - v1.0.0](../README.md) / [Exports](../modules.md) / [NBSError](../modules/nbserror.md) / NBSError
 
 # Class: NBSError
 
@@ -42,7 +42,7 @@ Name | Type |
 
 **Returns:** [*NBSError*](nbserror.nbserror-1.md)
 
-Defined in: src/NBSError.ts:2
+Defined in: [src/NBSError.ts:2](https://github.com/nbsolutions-ca/error/blob/862e145/src/NBSError.ts#L2)
 
 ## Properties
 
