@@ -1,14 +1,12 @@
-[@nbsolutions/error - v1.0.0](../README.md) / [Exports](../modules.md) / [NBSError](../modules/nbserror.md) / NBSError
+[@nbsolutions/error - v1.0.1](../README.md) / [Exports](../modules.md) / [NBSError](../modules/nbserror.md) / NBSError
 
 # Class: NBSError
 
 [NBSError](../modules/nbserror.md).NBSError
 
-## Hierarchy
+## Implements
 
 * *Error*
-
-  ↳ **NBSError**
 
 ## Table of contents
 
@@ -21,12 +19,6 @@
 - [message](nbserror.nbserror-1.md#message)
 - [name](nbserror.nbserror-1.md#name)
 - [stack](nbserror.nbserror-1.md#stack)
-- [prepareStackTrace](nbserror.nbserror-1.md#preparestacktrace)
-- [stackTraceLimit](nbserror.nbserror-1.md#stacktracelimit)
-
-### Methods
-
-- [captureStackTrace](nbserror.nbserror-1.md#capturestacktrace)
 
 ## Constructors
 
@@ -42,7 +34,7 @@ Name | Type |
 
 **Returns:** [*NBSError*](nbserror.nbserror-1.md)
 
-Defined in: [src/NBSError.ts:2](https://github.com/nbsolutions-ca/error/blob/862e145/src/NBSError.ts#L2)
+Defined in: [NBSError.ts:13](https://github.com/nbsolutions-ca/error/blob/638120a/src/NBSError.ts#L13)
 
 ## Properties
 
@@ -50,7 +42,7 @@ Defined in: [src/NBSError.ts:2](https://github.com/nbsolutions-ca/error/blob/862
 
 • **message**: *string*
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:974
+Defined in: [NBSError.ts:12](https://github.com/nbsolutions-ca/error/blob/638120a/src/NBSError.ts#L12)
 
 ___
 
@@ -58,66 +50,12 @@ ___
 
 • **name**: *string*
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:973
+Defined in: [NBSError.ts:11](https://github.com/nbsolutions-ca/error/blob/638120a/src/NBSError.ts#L11)
 
 ___
 
 ### stack
 
-• `Optional` **stack**: *string*
+• **stack**: *string*
 
-Defined in: node_modules/typescript/lib/lib.es5.d.ts:975
-
-___
-
-### prepareStackTrace
-
-▪ `Optional` `Static` **prepareStackTrace**: (`err`: Error, `stackTraces`: CallSite[]) => *any*
-
-Optional override for formatting stack traces
-
-**`see`** https://v8.dev/docs/stack-trace-api#customizing-stack-traces
-
-#### Type declaration:
-
-▸ (`err`: Error, `stackTraces`: CallSite[]): *any*
-
-#### Parameters:
-
-Name | Type |
-:------ | :------ |
-`err` | Error |
-`stackTraces` | CallSite[] |
-
-**Returns:** *any*
-
-Defined in: node_modules/@types/node/globals.d.ts:11
-
-Defined in: node_modules/@types/node/globals.d.ts:11
-
-___
-
-### stackTraceLimit
-
-▪ `Static` **stackTraceLimit**: *number*
-
-Defined in: node_modules/@types/node/globals.d.ts:13
-
-## Methods
-
-### captureStackTrace
-
-▸ `Static`**captureStackTrace**(`targetObject`: *object*, `constructorOpt?`: Function): *void*
-
-Create .stack property on a target object
-
-#### Parameters:
-
-Name | Type |
-:------ | :------ |
-`targetObject` | *object* |
-`constructorOpt?` | Function |
-
-**Returns:** *void*
-
-Defined in: node_modules/@types/node/globals.d.ts:4
+Defined in: [NBSError.ts:13](https://github.com/nbsolutions-ca/error/blob/638120a/src/NBSError.ts#L13)
