@@ -16,11 +16,15 @@ export class NBSError implements Error {
         this.name = this.constructor.name;
         this.message = message;
 
-        if ((<any>Error).captureStackTrace) {
-            (<any>Error).captureStackTrace(this, NBSError)
+        if ((Error as any).captureStackTrace) {
+            (Error as any).captureStackTrace(this, NBSError)
         }
         else {
             this.stack = new Error().stack;
         }
+    }
+
+    protected _setMessage(message: string): void {
+        this.message = message;
     }
 }
