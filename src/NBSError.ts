@@ -1,4 +1,6 @@
 
+import {NBSObject} from '@nbsolutions/object';
+
 /*
  * We use the Error interface instead of extending the Error object.
  * This is because if you extend Error, it will forcefully overwrite the constructor
@@ -7,12 +9,13 @@
  * Unfortunately, this means you cannot use instanceof Error checks, but instanceof NBSError
  * checks should still work so that shouldn't be a big deal...
  */
-export class NBSError implements Error {
+export class NBSError extends NBSObject implements Error {
     public name: string;
     public message: string;
     public stack: string;
 
     public constructor(message: string) {
+        super();
         this.name = this.constructor.name;
         this.message = message;
 

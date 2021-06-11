@@ -5,6 +5,7 @@
   "main": "lib/api.js",
   "types": "types/api.d.ts",
   "dependencies": {
+    "@nbsolutions/object": "file:../object/nbsolutions-object-0.0.0.tgz",
     "tslib": "2.2.0"
   },
   "devDependencies": {
