@@ -1,6 +1,6 @@
 {
   "name": "@nbsolutions/error",
-  "version": "1.0.1",
+  "version": "0.0.0",
   "description": "Common error packet",
   "main": "lib/api.js",
   "types": "types/api.d.ts",
