@@ -1,5 +1,6 @@
 
 import {NBSObject} from '@nbsolutions/object';
+import {INBSError} from '@nbsolutions/interfaces';
 
 /*
  * We use the Error interface instead of extending the Error object.
@@ -9,15 +10,17 @@ import {NBSObject} from '@nbsolutions/object';
  * Unfortunately, this means you cannot use instanceof Error checks, but instanceof NBSError
  * checks should still work so that shouldn't be a big deal...
  */
-export class NBSError extends NBSObject implements Error {
+export class NBSError<TErrorDetails = void> extends NBSObject implements Error, INBSError<TErrorDetails> {
     public name: string;
     public message: string;
     public stack: string;
+    private $details: TErrorDetails;
 
-    public constructor(message: string) {
+    public constructor(message: string, details?: TErrorDetails) {
         super();
         this.name = this.constructor.name;
         this.message = message;
+        this.$details = details;
 
         if ((Error as any).captureStackTrace) {
             (Error as any).captureStackTrace(this, NBSError)
@@ -25,6 +28,10 @@ export class NBSError extends NBSObject implements Error {
         else {
             this.stack = new Error().stack;
         }
+    }
+
+    public getDetails(): TErrorDetails {
+        return this.$details;
     }
 
     protected _setMessage(message: string): void {

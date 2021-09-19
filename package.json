@@ -4,24 +4,32 @@
   "description": "Common error packet",
   "main": "lib/api.js",
   "types": "types/api.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "dependencies": {
-    "@nbsolutions/object": "file:../object/nbsolutions-object-0.0.0.tgz",
-    "tslib": "2.2.0"
+    "tslib": "2.3.1"
   },
   "devDependencies": {
     "@nbsolutions/eslint-plugin": "1.0.0",
-    "@totalpave/eslint-plugin": "4.0.0",
-    "@types/jest": "26.0.23",
-    "@typescript-eslint/eslint-plugin": "4.25.0",
-    "@typescript-eslint/parser": "4.25.0",
+    "@nbsolutions/interfaces": "0.0.1",
+    "@nbsolutions/object": "0.0.0",
+    "@types/jest": "27.0.1",
+    "@typescript-eslint/eslint-plugin": "4.31.1",
+    "@typescript-eslint/parser": "4.31.1",
     "auto-changelog": "2.3.0",
-    "eslint": "7.27.0",
-    "jest": "26.6.3",
-    "ts-jest": "26.5.3",
-    "ts-node": "10.0.0",
+    "eslint": "7.32.0",
+    "jest": "27.2.0",
+    "ts-jest": "27.0.5",
+    "ts-node": "10.2.1",
     "typedoc": "0.20.36",
     "typedoc-plugin-markdown": "3.8.2",
     "typescript": "4.2.3"
+  },
+  "peerDependencies": {
+    "@nbsolutions/interfaces": ">=0.0.1 <1",
+    "@nbsolutions/object": ">=0.0.0 <1"
   },
   "scripts": {
     "lint": "eslint --ext .ts,.tsx '?(src|spec)/**/*.?(ts|tsx)' --cache",
