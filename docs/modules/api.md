@@ -1,4 +1,4 @@
-[@nbsolutions/error - v1.0.1](../README.md) / [Exports](../modules.md) / api
+[@nbsolutions/error - v0.0.0](../README.md) / [Exports](../modules.md) / api
 
 # Module: api
 

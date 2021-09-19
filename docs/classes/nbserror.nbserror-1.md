@@ -1,12 +1,25 @@
-[@nbsolutions/error - v1.0.1](../README.md) / [Exports](../modules.md) / [NBSError](../modules/nbserror.md) / NBSError
+[@nbsolutions/error - v0.0.0](../README.md) / [Exports](../modules.md) / [NBSError](../modules/nbserror.md) / NBSError
 
-# Class: NBSError
+# Class: NBSError<TErrorDetails\>
 
 [NBSError](../modules/nbserror.md).NBSError
 
+## Type parameters
+
+| Name | Default |
+| :------ | :------ |
+| `TErrorDetails` | *void* |
+
+## Hierarchy
+
+- *NBSObject*
+
+  ↳ **NBSError**
+
 ## Implements
 
-* *Error*
+- *Error*
+- *INBSError*<TErrorDetails\>
 
 ## Table of contents
 
@@ -20,21 +33,40 @@
 - [name](nbserror.nbserror-1.md#name)
 - [stack](nbserror.nbserror-1.md#stack)
 
+### Methods
+
+- [\_excludeNBSObjectAutoBindingsFor](nbserror.nbserror-1.md#_excludenbsobjectautobindingsfor)
+- [\_setMessage](nbserror.nbserror-1.md#_setmessage)
+- [\_skipNBSObjectAutoBind](nbserror.nbserror-1.md#_skipnbsobjectautobind)
+- [getClassName](nbserror.nbserror-1.md#getclassname)
+- [getDetails](nbserror.nbserror-1.md#getdetails)
+- [getClassName](nbserror.nbserror-1.md#getclassname)
+- [isVoid](nbserror.nbserror-1.md#isvoid)
+
 ## Constructors
 
 ### constructor
 
-\+ **new NBSError**(`message`: *string*): [*NBSError*](nbserror.nbserror-1.md)
+\+ **new NBSError**<TErrorDetails\>(`message`: *string*, `details?`: TErrorDetails): [*NBSError*](nbserror.nbserror-1.md)<TErrorDetails\>
 
-#### Parameters:
+#### Type parameters
 
-Name | Type |
-:------ | :------ |
-`message` | *string* |
+| Name | Default |
+| :------ | :------ |
+| `TErrorDetails` | *void* |
 
-**Returns:** [*NBSError*](nbserror.nbserror-1.md)
+#### Parameters
 
-Defined in: [NBSError.ts:13](https://github.com/nbsolutions-ca/error/blob/638120a/src/NBSError.ts#L13)
+| Name | Type |
+| :------ | :------ |
+| `message` | *string* |
+| `details?` | TErrorDetails |
+
+**Returns:** [*NBSError*](nbserror.nbserror-1.md)<TErrorDetails\>
+
+Overrides: NBSObject.constructor
+
+Defined in: [src/NBSError.ts:17](https://github.com/nbsolutions-ca/error/blob/a7780a2/src/NBSError.ts#L17)
 
 ## Properties
 
@@ -42,7 +74,9 @@ Defined in: [NBSError.ts:13](https://github.com/nbsolutions-ca/error/blob/638120
 
 • **message**: *string*
 
-Defined in: [NBSError.ts:12](https://github.com/nbsolutions-ca/error/blob/638120a/src/NBSError.ts#L12)
+Implementation of: Error.message
+
+Defined in: [src/NBSError.ts:15](https://github.com/nbsolutions-ca/error/blob/a7780a2/src/NBSError.ts#L15)
 
 ___
 
@@ -50,7 +84,9 @@ ___
 
 • **name**: *string*
 
-Defined in: [NBSError.ts:11](https://github.com/nbsolutions-ca/error/blob/638120a/src/NBSError.ts#L11)
+Implementation of: Error.name
+
+Defined in: [src/NBSError.ts:14](https://github.com/nbsolutions-ca/error/blob/a7780a2/src/NBSError.ts#L14)
 
 ___
 
@@ -58,4 +94,114 @@ ___
 
 • **stack**: *string*
 
-Defined in: [NBSError.ts:13](https://github.com/nbsolutions-ca/error/blob/638120a/src/NBSError.ts#L13)
+Implementation of: Error.stack
+
+Defined in: [src/NBSError.ts:16](https://github.com/nbsolutions-ca/error/blob/a7780a2/src/NBSError.ts#L16)
+
+## Methods
+
+### \_excludeNBSObjectAutoBindingsFor
+
+▸ `Protected` **_excludeNBSObjectAutoBindingsFor**(): *string*[]
+
+**Returns:** *string*[]
+
+Inherited from: NBSObject.\_excludeNBSObjectAutoBindingsFor
+
+Defined in: node_modules/@nbsolutions/object/types/NBSObject.d.ts:36
+
+___
+
+### \_setMessage
+
+▸ `Protected` **_setMessage**(`message`: *string*): *void*
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `message` | *string* |
+
+**Returns:** *void*
+
+Defined in: [src/NBSError.ts:37](https://github.com/nbsolutions-ca/error/blob/a7780a2/src/NBSError.ts#L37)
+
+___
+
+### \_skipNBSObjectAutoBind
+
+▸ `Protected` **_skipNBSObjectAutoBind**(): *boolean*
+
+**Returns:** *boolean*
+
+Inherited from: NBSObject.\_skipNBSObjectAutoBind
+
+Defined in: node_modules/@nbsolutions/object/types/NBSObject.d.ts:34
+
+___
+
+### getClassName
+
+▸ **getClassName**(): *string*
+
+**Returns:** *string*
+
+Inherited from: NBSObject.getClassName
+
+Defined in: node_modules/@nbsolutions/object/types/NBSObject.d.ts:26
+
+___
+
+### getDetails
+
+▸ **getDetails**(): TErrorDetails
+
+**Returns:** TErrorDetails
+
+Implementation of: INBSError.getDetails
+
+Defined in: [src/NBSError.ts:33](https://github.com/nbsolutions-ca/error/blob/a7780a2/src/NBSError.ts#L33)
+
+___
+
+### getClassName
+
+▸ `Static` **getClassName**(`o`: *any*): *string*
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `o` | *any* |
+
+**Returns:** *string*
+
+Inherited from: NBSObject.getClassName
+
+Defined in: node_modules/@nbsolutions/object/types/NBSObject.d.ts:37
+
+___
+
+### isVoid
+
+▸ `Static` **isVoid**<T\>(`o`: T): *boolean*
+
+Returns true if the given value is `null` or `undefined`
+
+#### Type parameters
+
+| Name | Default |
+| :------ | :------ |
+| `T` | *any* |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `o` | T | Any value |
+
+**Returns:** *boolean*
+
+Inherited from: NBSObject.isVoid
+
+Defined in: node_modules/@nbsolutions/object/types/NBSObject.d.ts:33
