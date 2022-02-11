@@ -1,6 +1,6 @@
-[@nbsolutions/error - v0.0.0](README.md) / Exports
+[@nbsolutions/error - v0.0.1](README.md) / Exports
 
-# @nbsolutions/error - v0.0.0
+# @nbsolutions/error - v0.0.1
 
 ## Table of contents
 

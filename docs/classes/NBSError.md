@@ -1,4 +1,4 @@
-[@nbsolutions/error - v0.0.0](../README.md) / [Exports](../modules.md) / NBSError
+[@nbsolutions/error - v0.0.1](../README.md) / [Exports](../modules.md) / NBSError
 
 # Class: NBSError<TErrorDetails\>
 
@@ -66,7 +66,7 @@ NBSObject.constructor
 
 #### Defined in
 
-[src/NBSError.ts:19](https://github.com/nbsolutions-ca/error/blob/fe708ac/src/NBSError.ts#L19)
+[src/NBSError.ts:19](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L19)
 
 ## Properties
 
@@ -80,7 +80,7 @@ Error.message
 
 #### Defined in
 
-[src/NBSError.ts:15](https://github.com/nbsolutions-ca/error/blob/fe708ac/src/NBSError.ts#L15)
+[src/NBSError.ts:15](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L15)
 
 ___
 
@@ -94,7 +94,7 @@ Error.name
 
 #### Defined in
 
-[src/NBSError.ts:14](https://github.com/nbsolutions-ca/error/blob/fe708ac/src/NBSError.ts#L14)
+[src/NBSError.ts:14](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L14)
 
 ___
 
@@ -108,7 +108,7 @@ Error.stack
 
 #### Defined in
 
-[src/NBSError.ts:16](https://github.com/nbsolutions-ca/error/blob/fe708ac/src/NBSError.ts#L16)
+[src/NBSError.ts:16](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L16)
 
 ## Methods
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/NBSError.ts:37](https://github.com/nbsolutions-ca/error/blob/fe708ac/src/NBSError.ts#L37)
+[src/NBSError.ts:37](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L37)
 
 ___
 
@@ -200,7 +200,7 @@ INBSError.getDetails
 
 #### Defined in
 
-[src/NBSError.ts:33](https://github.com/nbsolutions-ca/error/blob/fe708ac/src/NBSError.ts#L33)
+[src/NBSError.ts:33](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L33)
 
 ___
 
