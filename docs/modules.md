@@ -4,7 +4,16 @@
 
 ## Table of contents
 
-### Modules
+### References
 
-- [NBSError](modules/nbserror.md)
-- [api](modules/api.md)
+- [default](modules.md#default)
+
+### Classes
+
+- [NBSError](classes/NBSError.md)
+
+## References
+
+### default
+
+Renames and re-exports [NBSError](classes/NBSError.md)
