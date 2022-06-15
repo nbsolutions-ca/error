@@ -38,7 +38,7 @@
 - [\_skipNBSObjectAutoBind](NBSError.md#_skipnbsobjectautobind)
 - [getClassName](NBSError.md#getclassname)
 - [getDetails](NBSError.md#getdetails)
-- [getClassName](NBSError.md#getclassname)
+- [getClassName](NBSError.md#getclassname-1)
 - [isVoid](NBSError.md#isvoid)
 
 ## Constructors
@@ -66,7 +66,7 @@ NBSObject.constructor
 
 #### Defined in
 
-[src/NBSError.ts:19](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L19)
+[src/NBSError.ts:19](https://github.com/nbsolutions-ca/error-js/blob/ff19b64/src/NBSError.ts#L19)
 
 ## Properties
 
@@ -80,7 +80,7 @@ Error.message
 
 #### Defined in
 
-[src/NBSError.ts:15](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L15)
+[src/NBSError.ts:15](https://github.com/nbsolutions-ca/error-js/blob/ff19b64/src/NBSError.ts#L15)
 
 ___
 
@@ -94,7 +94,7 @@ Error.name
 
 #### Defined in
 
-[src/NBSError.ts:14](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L14)
+[src/NBSError.ts:14](https://github.com/nbsolutions-ca/error-js/blob/ff19b64/src/NBSError.ts#L14)
 
 ___
 
@@ -108,7 +108,7 @@ Error.stack
 
 #### Defined in
 
-[src/NBSError.ts:16](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L16)
+[src/NBSError.ts:16](https://github.com/nbsolutions-ca/error-js/blob/ff19b64/src/NBSError.ts#L16)
 
 ## Methods
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/NBSError.ts:37](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L37)
+[src/NBSError.ts:37](https://github.com/nbsolutions-ca/error-js/blob/ff19b64/src/NBSError.ts#L37)
 
 ___
 
@@ -200,7 +200,7 @@ INBSError.getDetails
 
 #### Defined in
 
-[src/NBSError.ts:33](https://github.com/nbsolutions-ca/error/blob/c8f0093/src/NBSError.ts#L33)
+[src/NBSError.ts:33](https://github.com/nbsolutions-ca/error-js/blob/ff19b64/src/NBSError.ts#L33)
 
 ___
 
